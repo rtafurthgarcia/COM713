@@ -1,0 +1,368 @@
+{
+  "files": [
+    {
+      "fileName": "./syft-cdx.json",
+      "SPDXID": "SPDXRef-File--syft-cdx.json-2664FE5A92AC48CAD88ADC3660192B407E0890EA",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11bb2bf69348f0772457f84089ed41161434da60c726e63fc1e3522ac0f9737f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2664fe5a92ac48cad88adc3660192b407e0890ea"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./cdxgen.json",
+      "SPDXID": "SPDXRef-File--cdxgen.json-3337F1AAAFFA9388CA77F1655143D6706A6F8B6E",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "90e9f73d02642bfaafe06d157338de16b83db7f926bad22e261a52df752d0151"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3337f1aaaffa9388ca77f1655143d6706a6f8b6e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./midware.json",
+      "SPDXID": "SPDXRef-File--midware.json-10A3BBC3FA4B844CC8B7D143EA19429E7444A4BA",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "203ce8e72d771ad9cf20c15ab46b3a1e19cf344686406d29a6b385a4327bfc68"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "10a3bbc3fa4b844cc8b7d143ea19429e7444a4ba"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "packages": [
+    {
+      "name": "certifi",
+      "SPDXID": "SPDXRef-Package-0ED77BFCDD9AFF6BE2C565B4CE6F33756FDFE50EDA2057C2102AFEDB65EAEA35",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "2024.7.4",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/certifi@2024.7.4"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "markdown",
+      "SPDXID": "SPDXRef-Package-56BFFDAE0CF26C7CE4AD534C9482060CF35A70E237DE3F735E3E62D3A05F45CF",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "3.7",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/markdown@3.7"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "charset-normalizer",
+      "SPDXID": "SPDXRef-Package-794CE3DC0083BD7F1AA1B2BD3006565EBFBB1D91C46A04B14DBB71E15A594F3B",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "3.3.2",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/charset-normalizer@3.3.2"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "oauthlib",
+      "SPDXID": "SPDXRef-Package-923FAA918203C51E003FCC1FA932A95C98223BDBD6CA031DADC44049002D4D51",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "3.2.2",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/oauthlib@3.2.2"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "requests-oauthlib",
+      "SPDXID": "SPDXRef-Package-9F6B3FD40957721BE31E96C1ADBA9CD708C4E3ED59BAD8EC8C0BE1DFDFF44656",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "2.0.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/requests-oauthlib@2.0.0"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "PyYAML",
+      "SPDXID": "SPDXRef-Package-7CFA63577801497C1DCA35B4DF7AF0A27E65C160AF5232CCEE9E7AB56927CD4D",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "6.0.2",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pyyaml@6.0.2"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "colorama",
+      "SPDXID": "SPDXRef-Package-1C965D0DC1AC3A7595E8794C73336CB9E8E3EAD3BF00214FE42EB1306EE5F3D3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "0.4.6",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/colorama@0.4.6"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "requests",
+      "SPDXID": "SPDXRef-Package-51E604E997F1D03A33B2D1256BB349850F6328DEC7C0AAAD07AB0535C24C1731",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "2.32.3",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/requests@2.32.3"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "urllib3",
+      "SPDXID": "SPDXRef-Package-F8B5E5C6102872A765DEF773B814EA4A4D0E66862DD0463AC6968646BCD196E7",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "2.2.2",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/urllib3@2.2.2"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "idna",
+      "SPDXID": "SPDXRef-Package-0968E46AB7450997E0D86936A888862CCC772BDF62FA68EB43A7E03B122D908E",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "3.8",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/idna@3.8"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "click",
+      "SPDXID": "SPDXRef-Package-C092471EA7E541BAE8F26AEE899D29317C447B742CAAE2E1BBAD9D8C4965419C",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "8.1.7",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/click@8.1.7"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "apprise",
+      "SPDXID": "SPDXRef-RootPackage",
+      "downloadLocation": "NOASSERTION",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "8502702c1d63c05532cc12e0c91a8bd209d2e4b2"
+      },
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "1.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:swid/pypi/sbom-tool.com/apprise@1.0?tag_id=e21347e6-3fe5-4062-a80f-342c41fd07ab"
+        }
+      ],
+      "supplier": "Organization: pypi",
+      "hasFiles": [
+        "SPDXRef-File--midware.json-10A3BBC3FA4B844CC8B7D143EA19429E7444A4BA",
+        "SPDXRef-File--cdxgen.json-3337F1AAAFFA9388CA77F1655143D6706A6F8B6E",
+        "SPDXRef-File--syft-cdx.json-2664FE5A92AC48CAD88ADC3660192B407E0890EA"
+      ]
+    }
+  ],
+  "externalDocumentRefs": [],
+  "relationships": [
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-0968E46AB7450997E0D86936A888862CCC772BDF62FA68EB43A7E03B122D908E",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-F8B5E5C6102872A765DEF773B814EA4A4D0E66862DD0463AC6968646BCD196E7",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-51E604E997F1D03A33B2D1256BB349850F6328DEC7C0AAAD07AB0535C24C1731",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-1C965D0DC1AC3A7595E8794C73336CB9E8E3EAD3BF00214FE42EB1306EE5F3D3",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-7CFA63577801497C1DCA35B4DF7AF0A27E65C160AF5232CCEE9E7AB56927CD4D",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-9F6B3FD40957721BE31E96C1ADBA9CD708C4E3ED59BAD8EC8C0BE1DFDFF44656",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-C092471EA7E541BAE8F26AEE899D29317C447B742CAAE2E1BBAD9D8C4965419C",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-923FAA918203C51E003FCC1FA932A95C98223BDBD6CA031DADC44049002D4D51",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-794CE3DC0083BD7F1AA1B2BD3006565EBFBB1D91C46A04B14DBB71E15A594F3B",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-56BFFDAE0CF26C7CE4AD534C9482060CF35A70E237DE3F735E3E62D3A05F45CF",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-0ED77BFCDD9AFF6BE2C565B4CE6F33756FDFE50EDA2057C2102AFEDB65EAEA35",
+      "spdxElementId": "SPDXRef-RootPackage"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "apprise 1.8.1",
+  "documentNamespace": "https://sbom-tool.com/apprise/1.8.1/x7n-zsjFhkiwv9EQ7RX4Fw",
+  "creationInfo": {
+    "created": "2024-08-26T07:37:47Z",
+    "creators": [
+      "Organization: pypi",
+      "Tool: Microsoft.SBOMTool-2.2.7"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-RootPackage"
+  ]
+}

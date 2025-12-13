@@ -1,0 +1,25 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:31169ef2-94bd-46bc-b66b-fdfaa7600eed",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2024-12-06T18:03:46+01:00",
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "author": "anchore",
+                    "name": "syft",
+                    "version": "1.0.1"
+                }
+            ]
+        },
+        "component": {
+            "bom-ref": "689d65d4c45c24a3",
+            "type": "file",
+            "name": "../projects/pdm-hatchling"
+        }
+    }
+}

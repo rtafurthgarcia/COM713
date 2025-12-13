@@ -1,0 +1,13 @@
+#
+# Plugin Dependencies
+#
+
+# Provides fcm:// and spush://
+cryptography
+
+# Provides growl:// support
+gntp
+
+# Provides mqtt:// support
+# use v1.x due to https://github.com/eclipse/paho.mqtt.python/issues/814
+paho-mqtt < 2.0.0

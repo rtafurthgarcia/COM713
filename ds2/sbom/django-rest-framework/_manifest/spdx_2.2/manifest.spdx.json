@@ -1,0 +1,187 @@
+{
+  "files": [
+    {
+      "fileName": "./midware.json",
+      "SPDXID": "SPDXRef-File--midware.json-1CF0482D41034FE7FC18B7AF5A626A64AC6E1E4A",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "35f472bae65183816293fe939433ea7add588590d3032e0ced643223be2e8c78"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1cf0482d41034fe7fc18b7af5a626a64ac6e1e4a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./syft-cdx.json",
+      "SPDXID": "SPDXRef-File--syft-cdx.json-C3687CDFB48833B0B759482A765870745117A775",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c765f1ad67a077eddb52096fa78e9260b95b21b3f57c7226ff921a500942c260"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c3687cdfb48833b0b759482a765870745117a775"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "packages": [
+    {
+      "name": "typing-extensions",
+      "SPDXID": "SPDXRef-Package-5E84A0A8515DD9F83983E1308A76D5D7A7A6CE38750EE08E9321B6178AF4C5D9",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "4.12.2",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/typing-extensions@4.12.2"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "asgiref",
+      "SPDXID": "SPDXRef-Package-E0B824B10F201A6E114EB41DC5C82C3FBDEA0D08091E30921A25DE86B7FEEBEC",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "3.8.1",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/asgiref@3.8.1"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "django",
+      "SPDXID": "SPDXRef-Package-5FF3A02DE1883170BF34B1003AE6B0CC1A804DDFEAF920DC42B89B44784CA4ED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "5.1",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/django@5.1"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "sqlparse",
+      "SPDXID": "SPDXRef-Package-3D0D3615F84BB12091D94A2F90123C119384E359A8D8E8D1D02026F6B59AC594",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "0.5.1",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sqlparse@0.5.1"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "django-rest-framework",
+      "SPDXID": "SPDXRef-RootPackage",
+      "downloadLocation": "NOASSERTION",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "3a9bac5e27e475c6b96264268426c9b49b8c4a5b"
+      },
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "1.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:swid/pypi/sbom-tool.com/django-rest-framework@1.0?tag_id=e1b331a3-898d-4eca-8a76-fbb9d9306263"
+        }
+      ],
+      "supplier": "Organization: pypi",
+      "hasFiles": [
+        "SPDXRef-File--syft-cdx.json-C3687CDFB48833B0B759482A765870745117A775",
+        "SPDXRef-File--midware.json-1CF0482D41034FE7FC18B7AF5A626A64AC6E1E4A"
+      ]
+    }
+  ],
+  "externalDocumentRefs": [],
+  "relationships": [
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-5FF3A02DE1883170BF34B1003AE6B0CC1A804DDFEAF920DC42B89B44784CA4ED",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-3D0D3615F84BB12091D94A2F90123C119384E359A8D8E8D1D02026F6B59AC594",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-E0B824B10F201A6E114EB41DC5C82C3FBDEA0D08091E30921A25DE86B7FEEBEC",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-5E84A0A8515DD9F83983E1308A76D5D7A7A6CE38750EE08E9321B6178AF4C5D9",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "django-rest-framework 1.0",
+  "documentNamespace": "https://sbom-tool.com/django-rest-framework/1.0/uj6oOOdYeUa_UkPhUcDgcA",
+  "creationInfo": {
+    "created": "2024-08-26T07:37:38Z",
+    "creators": [
+      "Organization: pypi",
+      "Tool: Microsoft.SBOMTool-2.2.7"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-RootPackage"
+  ]
+}

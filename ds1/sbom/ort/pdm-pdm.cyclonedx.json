@@ -1,0 +1,29 @@
+{
+    "bom": {
+        "@serialNumber": "urn:uuid:2b254f4a-6b5f-4703-b2c8-66d899048b9c",
+        "@version": "1",
+        "@xmlns": "http://cyclonedx.org/schema/bom/1.5",
+        "metadata": {
+            "timestamp": "2024-12-06T17:27:55Z",
+            "tools": {
+                "components": {
+                    "component": {
+                        "@type": "application",
+                        "name": "OSS Review Toolkit",
+                        "version": "DOCKER-SNAPSHOT"
+                    }
+                }
+            },
+            "licenses": {
+                "expression": "CC0-1.0"
+            }
+        },
+        "externalReferences": {
+            "reference": {
+                "@type": "vcs",
+                "url": "ssh://git@github.com/serenacofano/SBOM-python-ecosystem.git",
+                "comment": "URL to the Git repository of the projects"
+            }
+        }
+    }
+}

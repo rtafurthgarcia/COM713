@@ -1,0 +1,72 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# vi swap files
+.*.sw?
+
+# Distribution / packaging
+.Python
+env/
+.venv*
+build/
+BUILDROOT/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+.local
+
+# Generated from Docker Instance
+.bash_history
+.python_history
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Translations
+*.mo
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+#Ipython Notebook
+.ipynb_checkpoints
+
+#PyCharm
+.idea
+
+#PyDev (Eclipse)
+.project
+.pydevproject
+.settings
+.DS_Store

@@ -1,0 +1,982 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:84d6cb28-3c07-4e0a-9bae-dbb6e13867ec",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-12-06T17:07:36.057Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "10.2.2",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@10.2.2",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.2.2",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "name": "poetry-poetry",
+      "version": "0.1.0",
+      "description": "",
+      "author": "Author",
+      "type": "application",
+      "bom-ref": "pkg:pypi/poetry-poetry@0.1.0",
+      "purl": "pkg:pypi/poetry-poetry@0.1.0"
+    }
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "black",
+      "version": "21.10b0",
+      "description": "The uncompromising code formatter.",
+      "purl": "pkg:pypi/black@21.10b0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/black@21.10b0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "click",
+      "version": "8.1.7",
+      "description": "Composable command line interface toolkit",
+      "purl": "pkg:pypi/click@8.1.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.1.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "colorama",
+      "version": "0.4.6",
+      "description": "Cross-platform colored terminal text.",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/colorama@0.4.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "contourpy",
+      "version": "1.3.1",
+      "description": "Python library for calculating contours of 2D quadrilateral grids",
+      "purl": "pkg:pypi/contourpy@1.3.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/contourpy@1.3.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "cycler",
+      "version": "0.12.1",
+      "description": "Composable style cycles",
+      "purl": "pkg:pypi/cycler@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cycler@0.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "docopt",
+      "version": "0.6.2",
+      "description": "Pythonic argument parser, that will make you smile",
+      "purl": "pkg:pypi/docopt@0.6.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/docopt@0.6.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "exceptiongroup",
+      "version": "1.2.2",
+      "description": "Backport of PEP 654 (exception groups)",
+      "purl": "pkg:pypi/exceptiongroup@1.2.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/exceptiongroup@1.2.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "fonttools",
+      "version": "4.55.2",
+      "description": "Tools to manipulate font files",
+      "purl": "pkg:pypi/fonttools@4.55.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/fonttools@4.55.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "iniconfig",
+      "version": "2.0.0",
+      "description": "brain-dead simple config-ini parsing",
+      "purl": "pkg:pypi/iniconfig@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/iniconfig@2.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "joblib",
+      "version": "1.4.2",
+      "description": "Lightweight pipelining with Python functions",
+      "purl": "pkg:pypi/joblib@1.4.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/joblib@1.4.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "kiwisolver",
+      "version": "1.4.7",
+      "description": "A fast implementation of the Cassowary constraint solver",
+      "purl": "pkg:pypi/kiwisolver@1.4.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/kiwisolver@1.4.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "matplotlib",
+      "version": "3.9.3",
+      "description": "Python plotting package",
+      "purl": "pkg:pypi/matplotlib@3.9.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/matplotlib@3.9.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "mypy-extensions",
+      "version": "1.0.0",
+      "description": "Type system extensions for programs checked with the mypy type checker.",
+      "purl": "pkg:pypi/mypy-extensions@1.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mypy-extensions@1.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "nltk",
+      "version": "3.9.1",
+      "description": "Natural Language Toolkit",
+      "purl": "pkg:pypi/nltk@3.9.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/nltk@3.9.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "numpy",
+      "version": "2.1.3",
+      "description": "Fundamental package for array computing in Python",
+      "purl": "pkg:pypi/numpy@2.1.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/numpy@2.1.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "packaging",
+      "version": "24.2",
+      "description": "Core utilities for Python packages",
+      "purl": "pkg:pypi/packaging@24.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@24.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pandas",
+      "version": "2.2.3",
+      "description": "Powerful data structures for data analysis, time series, and statistics",
+      "purl": "pkg:pypi/pandas@2.2.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/pandas@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pathspec",
+      "version": "0.12.1",
+      "description": "Utility library for gitignore style pattern matching of file paths.",
+      "purl": "pkg:pypi/pathspec@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pathspec@0.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pillow",
+      "version": "11.0.0",
+      "description": "Python Imaging Library (Fork)",
+      "purl": "pkg:pypi/pillow@11.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pillow@11.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "platformdirs",
+      "version": "4.3.6",
+      "description": "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`.",
+      "purl": "pkg:pypi/platformdirs@4.3.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/platformdirs@4.3.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pluggy",
+      "version": "1.5.0",
+      "description": "plugin and hook calling mechanisms for python",
+      "purl": "pkg:pypi/pluggy@1.5.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pluggy@1.5.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pyparsing",
+      "version": "3.2.0",
+      "description": "pyparsing module - Classes and methods to define and execute parsing grammars",
+      "purl": "pkg:pypi/pyparsing@3.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyparsing@3.2.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pytest",
+      "version": "8.3.4",
+      "description": "pytest: simple powerful testing with Python",
+      "purl": "pkg:pypi/pytest@8.3.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest@8.3.4",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "description": "Extensions to the standard Python datetime module",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pytz",
+      "version": "2024.2",
+      "description": "World timezone definitions, modern and historical",
+      "purl": "pkg:pypi/pytz@2024.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytz@2024.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "regex",
+      "version": "2024.11.6",
+      "description": "Alternative regular expression module, to replace re.",
+      "purl": "pkg:pypi/regex@2024.11.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/regex@2024.11.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "seaborn",
+      "version": "0.12.2",
+      "description": "Statistical data visualization",
+      "purl": "pkg:pypi/seaborn@0.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/seaborn@0.12.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "six",
+      "version": "1.17.0",
+      "description": "Python 2 and 3 compatibility utilities",
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "tomli",
+      "version": "1.2.3",
+      "description": "A lil' TOML parser",
+      "purl": "pkg:pypi/tomli@1.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tomli@1.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "tqdm",
+      "version": "4.67.1",
+      "description": "Fast, Extensible Progress Meter",
+      "purl": "pkg:pypi/tqdm@4.67.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tqdm@4.67.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "typing-extensions",
+      "version": "4.12.2",
+      "description": "Backported and Experimental Type Hints for Python 3.8+",
+      "purl": "pkg:pypi/typing-extensions@4.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.12.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "tzdata",
+      "version": "2024.2",
+      "description": "Provider of IANA time zone data",
+      "purl": "pkg:pypi/tzdata@2024.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tzdata@2024.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "urllib3",
+      "version": "2.2.3",
+      "description": "HTTP library with thread-safe connection pooling, file post, and more.",
+      "purl": "pkg:pypi/urllib3@2.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/poetry-poetry/poetry.lock"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/poetry-poetry@0.1.0",
+      "dependsOn": [
+        "pkg:pypi/black@21.10b0",
+        "pkg:pypi/click@8.1.7",
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/contourpy@1.3.1",
+        "pkg:pypi/cycler@0.12.1",
+        "pkg:pypi/docopt@0.6.2",
+        "pkg:pypi/exceptiongroup@1.2.2",
+        "pkg:pypi/fonttools@4.55.2",
+        "pkg:pypi/iniconfig@2.0.0",
+        "pkg:pypi/joblib@1.4.2",
+        "pkg:pypi/kiwisolver@1.4.7",
+        "pkg:pypi/matplotlib@3.9.3",
+        "pkg:pypi/mypy-extensions@1.0.0",
+        "pkg:pypi/nltk@3.9.1",
+        "pkg:pypi/numpy@2.1.3",
+        "pkg:pypi/packaging@24.2",
+        "pkg:pypi/pandas@2.2.3",
+        "pkg:pypi/pathspec@0.12.1",
+        "pkg:pypi/pillow@11.0.0",
+        "pkg:pypi/platformdirs@4.3.6",
+        "pkg:pypi/pluggy@1.5.0",
+        "pkg:pypi/pyparsing@3.2.0",
+        "pkg:pypi/pytest@8.3.4",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/pytz@2024.2",
+        "pkg:pypi/regex@2024.11.6",
+        "pkg:pypi/seaborn@0.12.2",
+        "pkg:pypi/six@1.17.0",
+        "pkg:pypi/tomli@1.2.3",
+        "pkg:pypi/tqdm@4.67.1",
+        "pkg:pypi/typing-extensions@4.12.2",
+        "pkg:pypi/tzdata@2024.2",
+        "pkg:pypi/urllib3@2.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/black@21.10b0",
+      "dependsOn": [
+        "pkg:pypi/click@8.1.7",
+        "pkg:pypi/pathspec@0.12.1",
+        "pkg:pypi/platformdirs@4.3.6",
+        "pkg:pypi/regex@2024.11.6",
+        "pkg:pypi/tomli@1.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/click@8.1.7",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/colorama@0.4.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/contourpy@1.3.1",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.1.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/cycler@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/docopt@0.6.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/exceptiongroup@1.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/fonttools@4.55.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/iniconfig@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/joblib@1.4.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/kiwisolver@1.4.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/matplotlib@3.9.3",
+      "dependsOn": [
+        "pkg:pypi/contourpy@1.3.1",
+        "pkg:pypi/cycler@0.12.1",
+        "pkg:pypi/fonttools@4.55.2",
+        "pkg:pypi/kiwisolver@1.4.7",
+        "pkg:pypi/numpy@2.1.3",
+        "pkg:pypi/packaging@24.2",
+        "pkg:pypi/pillow@11.0.0",
+        "pkg:pypi/pyparsing@3.2.0",
+        "pkg:pypi/python-dateutil@2.9.0.post0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/mypy-extensions@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/nltk@3.9.1",
+      "dependsOn": [
+        "pkg:pypi/click@8.1.7",
+        "pkg:pypi/joblib@1.4.2",
+        "pkg:pypi/regex@2024.11.6",
+        "pkg:pypi/tqdm@4.67.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/numpy@2.1.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/packaging@24.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pandas@2.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pathspec@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pillow@11.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/platformdirs@4.3.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pluggy@1.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyparsing@3.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pytest@8.3.4",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/exceptiongroup@1.2.2",
+        "pkg:pypi/iniconfig@2.0.0",
+        "pkg:pypi/packaging@24.2",
+        "pkg:pypi/pluggy@1.5.0",
+        "pkg:pypi/tomli@1.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "dependsOn": [
+        "pkg:pypi/six@1.17.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pytz@2024.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/regex@2024.11.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/seaborn@0.12.2",
+      "dependsOn": [
+        "pkg:pypi/matplotlib@3.9.3",
+        "pkg:pypi/numpy@2.1.3",
+        "pkg:pypi/pandas@2.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tomli@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tqdm@4.67.1",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.12.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tzdata@2024.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/urllib3@2.2.3",
+      "dependsOn": []
+    }
+  ]
+}

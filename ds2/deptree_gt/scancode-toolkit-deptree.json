@@ -1,0 +1,1191 @@
+[
+    {
+        "package": {
+            "key": "attrs",
+            "package_name": "attrs",
+            "installed_version": "23.2.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "banal",
+            "package_name": "banal",
+            "installed_version": "1.0.6"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "beartype",
+            "package_name": "beartype",
+            "installed_version": "0.17.2"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "beautifulsoup4",
+            "package_name": "beautifulsoup4",
+            "installed_version": "4.12.3"
+        },
+        "dependencies": [
+            {
+                "key": "soupsieve",
+                "package_name": "soupsieve",
+                "installed_version": "2.3.2.post1",
+                "required_version": ">1.2"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "binaryornot",
+            "package_name": "binaryornot",
+            "installed_version": "0.4.4"
+        },
+        "dependencies": [
+            {
+                "key": "chardet",
+                "package_name": "chardet",
+                "installed_version": "5.0.0",
+                "required_version": ">=3.0.2"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "boolean-py",
+            "package_name": "boolean.py",
+            "installed_version": "4.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "certifi",
+            "package_name": "certifi",
+            "installed_version": "2024.2.2"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "cffi",
+            "package_name": "cffi",
+            "installed_version": "1.16.0"
+        },
+        "dependencies": [
+            {
+                "key": "pycparser",
+                "package_name": "pycparser",
+                "installed_version": "2.21",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "chardet",
+            "package_name": "chardet",
+            "installed_version": "5.0.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "charset-normalizer",
+            "package_name": "charset-normalizer",
+            "installed_version": "2.1.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "click",
+            "package_name": "click",
+            "installed_version": "8.1.7"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "colorama",
+            "package_name": "colorama",
+            "installed_version": "0.4.5"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "commoncode",
+            "package_name": "commoncode",
+            "installed_version": "31.2.1"
+        },
+        "dependencies": [
+            {
+                "key": "attrs",
+                "package_name": "attrs",
+                "installed_version": "23.2.0",
+                "required_version": ">=18.1,!=20.1.0"
+            },
+            {
+                "key": "beautifulsoup4",
+                "package_name": "beautifulsoup4",
+                "installed_version": "4.12.3",
+                "required_version": ">=4.0.0"
+            },
+            {
+                "key": "click",
+                "package_name": "click",
+                "installed_version": "8.1.7",
+                "required_version": ">=6.7,!=7.0"
+            },
+            {
+                "key": "requests",
+                "package_name": "requests",
+                "installed_version": "2.31.0",
+                "required_version": ">=2.7.0"
+            },
+            {
+                "key": "saneyaml",
+                "package_name": "saneyaml",
+                "installed_version": "0.6.0",
+                "required_version": ">=0.5.2"
+            },
+            {
+                "key": "text-unidecode",
+                "package_name": "text-unidecode",
+                "installed_version": "1.3",
+                "required_version": ">=1.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "construct",
+            "package_name": "construct",
+            "installed_version": "2.10.68"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "container-inspector",
+            "package_name": "container-inspector",
+            "installed_version": "31.1.0"
+        },
+        "dependencies": [
+            {
+                "key": "attrs",
+                "package_name": "attrs",
+                "installed_version": "23.2.0",
+                "required_version": ">=18.1,!=20.1.0"
+            },
+            {
+                "key": "click",
+                "package_name": "click",
+                "installed_version": "8.1.7",
+                "required_version": ">=6.7,!=8.0.3,!=7.0"
+            },
+            {
+                "key": "commoncode",
+                "package_name": "commoncode",
+                "installed_version": "31.2.1",
+                "required_version": ">=30.2.0"
+            },
+            {
+                "key": "dockerfile-parse",
+                "package_name": "dockerfile-parse",
+                "installed_version": "1.2.0",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "cryptography",
+            "package_name": "cryptography",
+            "installed_version": "42.0.5"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "debian-inspector",
+            "package_name": "debian_inspector",
+            "installed_version": "31.1.0"
+        },
+        "dependencies": [
+            {
+                "key": "attrs",
+                "package_name": "attrs",
+                "installed_version": "23.2.0",
+                "required_version": ">=19.2,!=20.1.0"
+            },
+            {
+                "key": "chardet",
+                "package_name": "chardet",
+                "installed_version": "5.0.0",
+                "required_version": ">=3.0.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "dockerfile-parse",
+            "package_name": "dockerfile-parse",
+            "installed_version": "1.2.0"
+        },
+        "dependencies": [
+            {
+                "key": "six",
+                "package_name": "six",
+                "installed_version": "1.16.0",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "dparse2",
+            "package_name": "dparse2",
+            "installed_version": "0.7.0"
+        },
+        "dependencies": [
+            {
+                "key": "packvers",
+                "package_name": "packvers",
+                "installed_version": "21.5",
+                "required_version": "Any"
+            },
+            {
+                "key": "pyyaml",
+                "package_name": "PyYAML",
+                "installed_version": "6.0.1",
+                "required_version": "Any"
+            },
+            {
+                "key": "toml",
+                "package_name": "toml",
+                "installed_version": "0.10.2",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "extractcode",
+            "package_name": "extractcode",
+            "installed_version": "31.0.0"
+        },
+        "dependencies": [
+            {
+                "key": "attrs",
+                "package_name": "attrs",
+                "installed_version": "23.2.0",
+                "required_version": ">=18.1,!=20.1.0"
+            },
+            {
+                "key": "commoncode",
+                "package_name": "commoncode",
+                "installed_version": "31.2.1",
+                "required_version": ">=30.2.0"
+            },
+            {
+                "key": "plugincode",
+                "package_name": "plugincode",
+                "installed_version": "32.0.0",
+                "required_version": ">=21.1.21"
+            },
+            {
+                "key": "six",
+                "package_name": "six",
+                "installed_version": "1.16.0",
+                "required_version": "Any"
+            },
+            {
+                "key": "typecode",
+                "package_name": "typecode",
+                "installed_version": "30.0.1",
+                "required_version": ">=21.6.1"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "extractcode-7z",
+            "package_name": "extractcode-7z",
+            "installed_version": "16.5.210531"
+        },
+        "dependencies": [
+            {
+                "key": "plugincode",
+                "package_name": "plugincode",
+                "installed_version": "32.0.0",
+                "required_version": ">=21.1.21"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "extractcode-libarchive",
+            "package_name": "extractcode-libarchive",
+            "installed_version": "3.5.1.210531"
+        },
+        "dependencies": [
+            {
+                "key": "plugincode",
+                "package_name": "plugincode",
+                "installed_version": "32.0.0",
+                "required_version": ">=21.1.21"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "fasteners",
+            "package_name": "fasteners",
+            "installed_version": "0.17.3"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "fingerprints",
+            "package_name": "fingerprints",
+            "installed_version": "1.0.3"
+        },
+        "dependencies": [
+            {
+                "key": "normality",
+                "package_name": "normality",
+                "installed_version": "2.3.3",
+                "required_version": ">=2.0.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "ftfy",
+            "package_name": "ftfy",
+            "installed_version": "6.1.1"
+        },
+        "dependencies": [
+            {
+                "key": "wcwidth",
+                "package_name": "wcwidth",
+                "installed_version": "0.2.5",
+                "required_version": ">=0.2.5"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "future",
+            "package_name": "future",
+            "installed_version": "0.18.2"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "gemfileparser2",
+            "package_name": "gemfileparser2",
+            "installed_version": "0.9.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "html5lib",
+            "package_name": "html5lib",
+            "installed_version": "1.1"
+        },
+        "dependencies": [
+            {
+                "key": "six",
+                "package_name": "six",
+                "installed_version": "1.16.0",
+                "required_version": ">=1.9"
+            },
+            {
+                "key": "webencodings",
+                "package_name": "webencodings",
+                "installed_version": "0.5.1",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "idna",
+            "package_name": "idna",
+            "installed_version": "3.3"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "importlib-metadata",
+            "package_name": "importlib-metadata",
+            "installed_version": "4.12.0"
+        },
+        "dependencies": [
+            {
+                "key": "zipp",
+                "package_name": "zipp",
+                "installed_version": "3.8.1",
+                "required_version": ">=0.5"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "inflection",
+            "package_name": "inflection",
+            "installed_version": "0.5.1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "intbitset",
+            "package_name": "intbitset",
+            "installed_version": "3.1.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "isodate",
+            "package_name": "isodate",
+            "installed_version": "0.6.1"
+        },
+        "dependencies": [
+            {
+                "key": "six",
+                "package_name": "six",
+                "installed_version": "1.16.0",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "jaraco-functools",
+            "package_name": "jaraco.functools",
+            "installed_version": "3.5.1"
+        },
+        "dependencies": [
+            {
+                "key": "more-itertools",
+                "package_name": "more-itertools",
+                "installed_version": "8.13.0",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "javaproperties",
+            "package_name": "javaproperties",
+            "installed_version": "0.8.1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "jinja2",
+            "package_name": "Jinja2",
+            "installed_version": "3.1.3"
+        },
+        "dependencies": [
+            {
+                "key": "markupsafe",
+                "package_name": "MarkupSafe",
+                "installed_version": "2.1.5",
+                "required_version": ">=2.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "jsonstreams",
+            "package_name": "jsonstreams",
+            "installed_version": "0.6.0"
+        },
+        "dependencies": [
+            {
+                "key": "six",
+                "package_name": "six",
+                "installed_version": "1.16.0",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "license-expression",
+            "package_name": "license-expression",
+            "installed_version": "30.3.0"
+        },
+        "dependencies": [
+            {
+                "key": "boolean-py",
+                "package_name": "boolean.py",
+                "installed_version": "4.0",
+                "required_version": ">=4.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "lxml",
+            "package_name": "lxml",
+            "installed_version": "5.1.0"
+        },
+        "dependencies": [
+            {
+                "key": "html5lib",
+                "package_name": "html5lib",
+                "installed_version": "1.1",
+                "required_version": ">=1.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "markupsafe",
+            "package_name": "MarkupSafe",
+            "installed_version": "2.1.5"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "more-itertools",
+            "package_name": "more-itertools",
+            "installed_version": "8.13.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "normality",
+            "package_name": "normality",
+            "installed_version": "2.3.3"
+        },
+        "dependencies": [
+            {
+                "key": "banal",
+                "package_name": "banal",
+                "installed_version": "1.0.6",
+                "required_version": ">=1.0.1"
+            },
+            {
+                "key": "chardet",
+                "package_name": "chardet",
+                "installed_version": "5.0.0",
+                "required_version": "Any"
+            },
+            {
+                "key": "charset-normalizer",
+                "package_name": "charset-normalizer",
+                "installed_version": "2.1.0",
+                "required_version": ">=2.0.0"
+            },
+            {
+                "key": "text-unidecode",
+                "package_name": "text-unidecode",
+                "installed_version": "1.3",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "packageurl-python",
+            "package_name": "packageurl-python",
+            "installed_version": "0.15.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "packaging",
+            "package_name": "packaging",
+            "installed_version": "24.1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "packvers",
+            "package_name": "packvers",
+            "installed_version": "21.5"
+        },
+        "dependencies": [
+            {
+                "key": "pyparsing",
+                "package_name": "pyparsing",
+                "installed_version": "3.0.9",
+                "required_version": ">=2.0.2,!=3.0.5"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "parameter-expansion-patched",
+            "package_name": "parameter-expansion-patched",
+            "installed_version": "0.3.1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pdfminer-six",
+            "package_name": "pdfminer.six",
+            "installed_version": "20220524"
+        },
+        "dependencies": [
+            {
+                "key": "charset-normalizer",
+                "package_name": "charset-normalizer",
+                "installed_version": "2.1.0",
+                "required_version": ">=2.0.0"
+            },
+            {
+                "key": "cryptography",
+                "package_name": "cryptography",
+                "installed_version": "42.0.5",
+                "required_version": ">=36.0.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "pefile",
+            "package_name": "pefile",
+            "installed_version": "2022.5.30"
+        },
+        "dependencies": [
+            {
+                "key": "future",
+                "package_name": "future",
+                "installed_version": "0.18.2",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "pip",
+            "package_name": "pip",
+            "installed_version": "24.2"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pip-requirements-parser",
+            "package_name": "pip-requirements-parser",
+            "installed_version": "32.0.1"
+        },
+        "dependencies": [
+            {
+                "key": "packaging",
+                "package_name": "packaging",
+                "installed_version": "24.1",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "pipdeptree",
+            "package_name": "pipdeptree",
+            "installed_version": "2.23.1"
+        },
+        "dependencies": [
+            {
+                "key": "packaging",
+                "package_name": "packaging",
+                "installed_version": "24.1",
+                "required_version": ">=23.1"
+            },
+            {
+                "key": "pip",
+                "package_name": "pip",
+                "installed_version": "24.2",
+                "required_version": ">=23.1.2"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "pkginfo2",
+            "package_name": "pkginfo2",
+            "installed_version": "30.0.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pluggy",
+            "package_name": "pluggy",
+            "installed_version": "1.0.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "plugincode",
+            "package_name": "plugincode",
+            "installed_version": "32.0.0"
+        },
+        "dependencies": [
+            {
+                "key": "click",
+                "package_name": "click",
+                "installed_version": "8.1.7",
+                "required_version": ">=6.7,!=7.0"
+            },
+            {
+                "key": "commoncode",
+                "package_name": "commoncode",
+                "installed_version": "31.2.1",
+                "required_version": ">=31.0.0"
+            },
+            {
+                "key": "pluggy",
+                "package_name": "pluggy",
+                "installed_version": "1.0.0",
+                "required_version": ">=0.12.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "ply",
+            "package_name": "ply",
+            "installed_version": "3.11"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "publicsuffix2",
+            "package_name": "publicsuffix2",
+            "installed_version": "2.20191221"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pyahocorasick",
+            "package_name": "pyahocorasick",
+            "installed_version": "2.1.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pycparser",
+            "package_name": "pycparser",
+            "installed_version": "2.21"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pygmars",
+            "package_name": "pygmars",
+            "installed_version": "0.7.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pygments",
+            "package_name": "Pygments",
+            "installed_version": "2.13.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pymaven-patch",
+            "package_name": "pymaven-patch",
+            "installed_version": "0.3.2"
+        },
+        "dependencies": [
+            {
+                "key": "lxml",
+                "package_name": "lxml",
+                "installed_version": "5.1.0",
+                "required_version": ">=4.0.0"
+            },
+            {
+                "key": "requests",
+                "package_name": "requests",
+                "installed_version": "2.31.0",
+                "required_version": ">=2.7.0"
+            },
+            {
+                "key": "six",
+                "package_name": "six",
+                "installed_version": "1.16.0",
+                "required_version": ">=1.10"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "pyparsing",
+            "package_name": "pyparsing",
+            "installed_version": "3.0.9"
+        },
+        "dependencies": [
+            {
+                "key": "jinja2",
+                "package_name": "Jinja2",
+                "installed_version": "3.1.3"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "pytz",
+            "package_name": "pytz",
+            "installed_version": "2022.1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pyyaml",
+            "package_name": "PyYAML",
+            "installed_version": "6.0.1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "rdflib",
+            "package_name": "rdflib",
+            "installed_version": "6.2.0"
+        },
+        "dependencies": [
+            {
+                "key": "isodate",
+                "package_name": "isodate",
+                "installed_version": "0.6.1",
+                "required_version": "Any"
+            },
+            {
+                "key": "pyparsing",
+                "package_name": "pyparsing",
+                "installed_version": "3.0.9",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "requests",
+            "package_name": "requests",
+            "installed_version": "2.31.0"
+        },
+        "dependencies": [
+            {
+                "key": "certifi",
+                "package_name": "certifi",
+                "installed_version": "2024.2.2",
+                "required_version": ">=2017.4.17"
+            },
+            {
+                "key": "charset-normalizer",
+                "package_name": "charset-normalizer",
+                "installed_version": "2.1.0",
+                "required_version": ">=2,<4"
+            },
+            {
+                "key": "idna",
+                "package_name": "idna",
+                "installed_version": "3.3",
+                "required_version": ">=2.5,<4"
+            },
+            {
+                "key": "urllib3",
+                "package_name": "urllib3",
+                "installed_version": "2.2.1",
+                "required_version": ">=1.21.1,<3"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "saneyaml",
+            "package_name": "saneyaml",
+            "installed_version": "0.6.0"
+        },
+        "dependencies": [
+            {
+                "key": "pyyaml",
+                "package_name": "PyYAML",
+                "installed_version": "6.0.1",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "semantic-version",
+            "package_name": "semantic-version",
+            "installed_version": "2.8.5"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "setuptools",
+            "package_name": "setuptools",
+            "installed_version": "65.5.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "six",
+            "package_name": "six",
+            "installed_version": "1.16.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "soupsieve",
+            "package_name": "soupsieve",
+            "installed_version": "2.3.2.post1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "spdx-tools",
+            "package_name": "spdx-tools",
+            "installed_version": "0.8.2"
+        },
+        "dependencies": [
+            {
+                "key": "boolean-py",
+                "package_name": "boolean.py",
+                "installed_version": "4.0",
+                "required_version": "Any"
+            },
+            {
+                "key": "beartype",
+                "package_name": "beartype",
+                "installed_version": "0.17.2",
+                "required_version": "Any"
+            },
+            {
+                "key": "click",
+                "package_name": "click",
+                "installed_version": "8.1.7",
+                "required_version": "Any"
+            },
+            {
+                "key": "license-expression",
+                "package_name": "license-expression",
+                "installed_version": "30.3.0",
+                "required_version": "Any"
+            },
+            {
+                "key": "ply",
+                "package_name": "ply",
+                "installed_version": "3.11",
+                "required_version": "Any"
+            },
+            {
+                "key": "pyyaml",
+                "package_name": "PyYAML",
+                "installed_version": "6.0.1",
+                "required_version": "Any"
+            },
+            {
+                "key": "rdflib",
+                "package_name": "rdflib",
+                "installed_version": "6.2.0",
+                "required_version": "Any"
+            },
+            {
+                "key": "semantic-version",
+                "package_name": "semantic-version",
+                "installed_version": "2.8.5",
+                "required_version": "Any"
+            },
+            {
+                "key": "uritools",
+                "package_name": "uritools",
+                "installed_version": "4.0.2",
+                "required_version": "Any"
+            },
+            {
+                "key": "xmltodict",
+                "package_name": "xmltodict",
+                "installed_version": "0.13.0",
+                "required_version": "Any"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "text-unidecode",
+            "package_name": "text-unidecode",
+            "installed_version": "1.3"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "toml",
+            "package_name": "toml",
+            "installed_version": "0.10.2"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "typecode",
+            "package_name": "typecode",
+            "installed_version": "30.0.1"
+        },
+        "dependencies": [
+            {
+                "key": "attrs",
+                "package_name": "attrs",
+                "installed_version": "23.2.0",
+                "required_version": ">=18.1,!=20.1.0"
+            },
+            {
+                "key": "binaryornot",
+                "package_name": "binaryornot",
+                "installed_version": "0.4.4",
+                "required_version": "Any"
+            },
+            {
+                "key": "commoncode",
+                "package_name": "commoncode",
+                "installed_version": "31.2.1",
+                "required_version": ">=30.2.0"
+            },
+            {
+                "key": "pdfminer-six",
+                "package_name": "pdfminer.six",
+                "installed_version": "20220524",
+                "required_version": ">=20200101"
+            },
+            {
+                "key": "plugincode",
+                "package_name": "plugincode",
+                "installed_version": "32.0.0",
+                "required_version": ">=30.0.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "typecode-libmagic",
+            "package_name": "typecode-libmagic",
+            "installed_version": "5.39.210531"
+        },
+        "dependencies": [
+            {
+                "key": "plugincode",
+                "package_name": "plugincode",
+                "installed_version": "32.0.0",
+                "required_version": ">=21.1.21"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "typing-extensions",
+            "package_name": "typing_extensions",
+            "installed_version": "4.3.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "uritools",
+            "package_name": "uritools",
+            "installed_version": "4.0.2"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "urllib3",
+            "package_name": "urllib3",
+            "installed_version": "2.2.1"
+        },
+        "dependencies": [
+            {
+                "key": "cryptography",
+                "package_name": "cryptography",
+                "installed_version": "42.0.5",
+                "required_version": ">=36.0.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "urlpy",
+            "package_name": "urlpy",
+            "installed_version": "0.5"
+        },
+        "dependencies": [
+            {
+                "key": "publicsuffix2",
+                "package_name": "publicsuffix2",
+                "installed_version": "2.20191221",
+                "required_version": ">=2.20191221"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "wcwidth",
+            "package_name": "wcwidth",
+            "installed_version": "0.2.5"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "webencodings",
+            "package_name": "webencodings",
+            "installed_version": "0.5.1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "xmltodict",
+            "package_name": "xmltodict",
+            "installed_version": "0.13.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "zipp",
+            "package_name": "zipp",
+            "installed_version": "3.8.1"
+        },
+        "dependencies": []
+    }
+]

@@ -1,0 +1,9 @@
+# Root certificate authority bundle
+certifi
+
+# Application dependencies
+requests
+requests-oauthlib
+click >= 5.0
+markdown
+PyYAML

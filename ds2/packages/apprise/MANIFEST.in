@@ -1,0 +1,10 @@
+include LICENSE
+include KEYWORDS
+include README.md
+include requirements.txt
+include win-requirements.txt
+include dev-requirements.txt
+recursive-include test *
+recursive-include packaging *
+global-exclude *.pyc
+global-exclude __pycache__
