@@ -1,1 +1,0 @@
-A set of scripts to update and generate licenses and license rules.
