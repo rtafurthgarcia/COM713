@@ -1,0 +1,20 @@
+{
+    "dataset_1": [
+        {
+            "package": "apprise",
+            "metadata": ["apprise", "requirements.txt"],
+            "source": ["apprise", "apprise", "apprise.py"],
+            "deps_from_metadata": [],
+            "deps_from_ast": [],
+            "deps_gt": []
+        },
+        {
+            "package": "django",
+            "metadata": ["django-rest-framework", "requirements.txt"],
+            "source": ["django-rest-framework", "rest_framework"],
+            "deps_from_metadata": [],
+            "deps_from_ast": [],
+            "deps_gt": []
+        }
+    ]
+}
