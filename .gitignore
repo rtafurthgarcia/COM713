@@ -206,3 +206,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Added because we won't change anything in those datasets anyway
+ds1/
+ds2/
