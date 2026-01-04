@@ -92,7 +92,7 @@ def extract_dependencies(
             extract_dependencies(child.dependencies, child_package, graph)
 
         if (parent_package is not None):
-            graph.insert_importstatement(child_package, parent_package)
+            graph.insert_importstatement(parent_package, child_package)
 
 def import_ds1_sboms(path: str, package: str) -> dict[str, DependencyGraph]:
     results = {}
@@ -148,7 +148,7 @@ def generate_ds2():
                 extract_ground_truth_dependencies(child["dependencies"], child_package, graph)
 
             if (parent_package is not None):
-                graph.insert_importstatement(child_package, parent_package)
+                graph.insert_importstatement(parent_package, child_package)
 
     sources_by_package = {
         "apprise": os.path.join(DS2_PATH, "packages", "apprise", "apprise", "apprise.py"),
