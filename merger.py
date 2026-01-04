@@ -37,9 +37,10 @@ class DependencyGraph():
 
 @dataclass
 class PackageAnalysis:
-    source_path: str | list[str]
+    source_path: str
     graphs: dict[str, DependencyGraph]
     raw_packages_from_metadata: list[str]
+    ground_truth: dict[str, DependencyGraph] | None
 
 @dataclass
 class Dataset:
@@ -66,7 +67,8 @@ def generate_ds1():
         dataset.package_analyses[package] = PackageAnalysis(
             source_path=os.path.join(DS1_PATH, "packages", package, "src", package, "main.py"),
             raw_packages_from_metadata=raw_requirements,
-            graphs=import_ds1_sboms(os.path.join(DS1_PATH, "sbom"), package)
+            graphs=import_ds1_sboms(os.path.join(DS1_PATH, "sbom"), package),
+            ground_truth=None
         )
         
 
@@ -75,40 +77,24 @@ def generate_ds1():
            json.dumps(asdict(dataset))
         )
 
-ds2_template = {
-    "packages": [
-        {
-            "name": "apprise",
-            "source": os.path.join(DS2_PATH, "packages", "apprise", "apprise", "apprise.py"),
-            "deps_from_metadata": [],
-            "deps_from_ast": []
-        },
-        {
-            "name": "django",
-            "source": os.path.join(DS2_PATH, "packages", "django-rest-framework", "rest_framework"),
-            "deps_from_metadata": [],
-            "deps_from_ast": []
-        },
-    ]
-}
+def extract_dependencies(
+    child_packages: SortedSet, 
+    parent_package: Package | None, 
+    graph: DependencyGraph
+):
+    for child in child_packages:
+        start = str(child.ref.value).find("/") + 1
+        end = str(child.ref.value).find("@")
+        if end == -1: end = None
+
+        child_package = graph.insert_package(child.ref.value[start:end])
+        if len(child.dependencies) > 0:
+            extract_dependencies(child.dependencies, child_package, graph)
+
+        if (parent_package is not None):
+            graph.insert_importstatement(child_package, parent_package)
 
 def import_ds1_sboms(path: str, package: str) -> dict[str, DependencyGraph]:
-    def extract_dependencies(
-            child_packages: SortedSet, 
-            parent_package: Package | None, 
-            graph: DependencyGraph
-    ):
-        for child in child_packages:
-            start = str(child.ref.value).find("/") + 1
-            end = str(child.ref.value).find("@")
-            if end == -1: end = None
-
-            child_package = graph.insert_package(child.ref.value[start:end])
-            if len(child.dependencies) > 0:
-                extract_dependencies(child.dependencies, child_package, graph)
-
-            if (parent_package is not None):
-                graph.insert_importstatement(child_package, parent_package)
     results = {}
 
     tools = os.listdir(path)
@@ -122,6 +108,70 @@ def import_ds1_sboms(path: str, package: str) -> dict[str, DependencyGraph]:
             extract_dependencies(deserialized_bom.dependencies, None, graph) # type: ignore
             results[tool] = graph
 
-    return results                 
+    return results
+
+def import_ds2_sboms(path: str, package: str) -> dict[str, DependencyGraph]:
+    results = {}
+
+    tools = [file for file in os.listdir(path) if ".json" in file]
+    for tool in tools:
+        tool_path = os.path.join(path, tool)
+
+        with open(tool_path) as input_json:
+            graph = DependencyGraph()
+            try:
+                deserialized_bom = Bom.from_json(data=json.loads(input_json.read())) # type: ignore
+
+                extract_dependencies(deserialized_bom.dependencies, None, graph) # type: ignore
+            except Exception as e:
+                print("Failed to process {}, error: {}".format(tool_path, e))
+                continue
+            finally:
+                results[tool[:-5]] = graph
+
+    return results
+
+def generate_ds2():
+    sources_by_package = {
+        "apprise": os.path.join(DS2_PATH, "packages", "apprise", "apprise", "apprise.py"),
+        "django-rest-framework": os.path.join(DS2_PATH, "packages", "django-rest-framework", "rest_framework"),
+        "fastapi": os.path.join(DS2_PATH, "packages", "fastapi", "fastapi"),
+        "impacket": os.path.join(DS2_PATH, "packages", "impacket", "impacket"),
+        "InstaPy": os.path.join(DS2_PATH, "packages", "InstaPy", "instapy"),
+        "keras": os.path.join(DS2_PATH, "packages", "keras", "keras"),
+        "scancode-toolkit": os.path.join(DS2_PATH, "packages", "scancode-toolkit", "src"),
+        "ydata-profiling": os.path.join(DS2_PATH, "packages", "ydata-profiling", "src")
+    }
+        
+    packages = os.listdir(os.path.join(DS2_PATH, "packages"))
+    dataset = Dataset()
+
+    for package in packages: 
+        requirements_path = os.path.join(os.path.join(DS2_PATH, "packages", package, "requirements.txt"))
+        if not os.path.exists(requirements_path):
+            continue
+        
+        raw_requirements = list()
+
+        with open(requirements_path) as requirements_file:
+            for req in requirements.parse(requirements_file):
+                if (req.name is None):
+                    raw_requirements.append(req.line)
+                else:
+                    raw_requirements.append(req.name)
+        
+        dataset.package_analyses[package] = PackageAnalysis(
+            source_path=sources_by_package[package],
+            raw_packages_from_metadata=raw_requirements,
+            graphs=import_ds2_sboms(os.path.join(DS2_PATH, "sbom", package), package),
+            ground_truth=None
+        )
+        
+
+    with open("merged_ds2.json", "w") as json_file:
+        json_file.write(
+           json.dumps(asdict(dataset))
+        )           
     
 generate_ds1()
+generate_ds2()
