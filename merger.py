@@ -3,69 +3,63 @@ import os
 import json
 import requirements
 from cyclonedx.model.bom import Bom
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict, field
 from sortedcontainers import SortedSet
 
 DS1_PATH = os.path.join(".", "ds1")
 DS2_PATH = os.path.join(".", "ds2")
 
-class Package:
-    __slots__ = 'name'
+@dataclass(eq=True, frozen=True)
+class Package():
+    name: str
 
-    def __init__(self, name: str):
-        """Do not call constructor directly. Use Graph s insert vertex(x)."""
-        self.name = name
-
-    def hash (self) -> int: # will allow vertex to be a map/set key
-        return hash(id(self))
-
+@dataclass(eq=True, frozen=True)
 class ImportStatement():
-    __slots__ = '_depends', '_depended_on', '_element'
-
-    def __init__(self, depends: Package, depended_on: Package):
-        self._depends = depends
-        self._depended_on = depended_on
+    depends: Package
+    depended_on: Package
 
     def endpoints(self) -> tuple[Package, Package]:
-        return (self._depends, self._depended_on)
-
-    def hash(self) -> int: # will allow edge to be a map/set key
-        return hash((self._depends, self._depended_on))
+        return (self.depends, self.depended_on)
     
 class DependencyGraph():
-    def __init__(self) -> None:
-        self._depends_on = {}
-        self._depended_on = {}
+    depends_on: dict[Package, dict[Package, ImportStatement]] = field(default_factory=dict)
+    depended_on: dict[Package, dict[Package, ImportStatement]] = field(default_factory=dict)
     
     def packages(self):
-        return self._depends_on.keys()
+        return self.depends_on.keys()
 
     def importstatements(self):
         """Return a set of all edges of the graph."""
         result = set( ) # avoid double-reporting edges of undirected graph
-        for secondary_map in self._depends_on.values():
+        for secondary_map in self.depends_on.values():
             result.update(secondary_map.values()) # add edges to resulting set
         
         return result
     
     def get_importstatement(self, depends: Package, depended_on: Package) -> ImportStatement | None:
-        return self._depends_on[depends].get(depended_on) 
+        return self.depends_on[depends].get(depended_on) 
     
     def insert_package(self, package_name: str) -> Package:
         new_package = Package(package_name)
 
-        self._depends_on[new_package] = {}
-        self._depended_on[new_package] = {}
+        self.depends_on[new_package] = {}
+        self.depended_on[new_package] = {}
 
         return new_package
 
     def insert_importstatement(self, depends: Package, depended_on: Package):
         new_importstatement = ImportStatement(depends, depended_on)
 
-        self._depends_on[depends][depended_on] = new_importstatement
-        self._depends_on[depends][depended_on] = new_importstatement
-
+        self.depends_on[depends][depended_on] = new_importstatement
+        self.depended_on[depended_on][depends] = new_importstatement
+        
         return new_importstatement
+    
+    def to_json(self):
+        return {
+            pkg.name: [dep.name for dep in deps.keys()]
+            for pkg, deps in self.depends_on.values()
+        }
 
 @dataclass
 class PackageAnalysis:
@@ -74,10 +68,13 @@ class PackageAnalysis:
     raw_packages_from_metadata: list[str]
     graphs: dict[str, DependencyGraph]
 
-def generate_ds1():
-    data = []
+@dataclass
+class Dataset:
+    package_analyses: list[PackageAnalysis]
 
+def generate_ds1():
     packages = os.listdir(os.path.join(DS1_PATH, "packages"))
+    dataset = Dataset(list())
 
     for package in packages: 
         requirements_path = os.path.join(os.path.join(DS1_PATH, "packages", package, "requirements.txt"))
@@ -88,19 +85,35 @@ def generate_ds1():
 
         with open(requirements_path) as requirements_file:
             for req in requirements.parse(requirements_file):
-                raw_requirements.append(req)
+                if (req.name is None):
+                    raw_requirements.append(req.line)
+                else:
+                    raw_requirements.append(req.name)
         
-        data.append(
-            PackageAnalysis(
-                name=package,
-                source_path=os.path.join(DS1_PATH, "packages", package, "src", package, "main.py"),
-                raw_packages_from_metadata=raw_requirements,
-                graphs=import_ds1_sboms(os.path.join(DS1_PATH, "sbom"), package)
-            )
-        )
+        dataset.package_analyses.append(PackageAnalysis(
+            name=package,
+            source_path=os.path.join(DS1_PATH, "packages", package, "src", package, "main.py"),
+            raw_packages_from_metadata=raw_requirements,
+            graphs=import_ds1_sboms(os.path.join(DS1_PATH, "sbom"), package)
+        ))
+        
 
-        with open("merged_ds1.json", "w") as json_file:
-            json_file.write(json.dumps(data))
+    with open("merged_ds1.json", "w") as json_file:
+        json_file.write(
+           json.dumps({
+                "package_analyses": [
+                    {
+                        "name": pa.name,
+                        "source_path": pa.source_path,
+                        "raw_packages_from_metadata": pa.raw_packages_from_metadata,
+                        "graphs": {
+                            k: v.to_json() for k, v in pa.graphs.items()
+                        }
+                    }
+                    for pa in dataset.package_analyses
+                ]
+            })
+        )
 
 ds2_template = {
     "packages": [
@@ -121,22 +134,21 @@ ds2_template = {
 
 def import_ds1_sboms(path: str, package: str) -> dict[str, DependencyGraph]:
     def extract_dependencies(
-            dependencies: SortedSet, 
-            parent_package: ImportStatement | None, 
+            child_packages: SortedSet, 
+            parent_package: Package | None, 
             graph: DependencyGraph
     ):
-        for dependency in dependencies:
-            if len(dependency.dependencies) > 0:
-                extract_dependencies(dependency.dependencies, dependency, graph) # type: ignore
+        for child in child_packages:
+            if len(child.dependencies) > 0:
+                extract_dependencies(child.dependencies, parent_package, graph) # type: ignore
             
-            start = str(dependency.ref.value).find("/") + 1
-            end = str(dependency.ref.value).find("@")
+            start = str(child.ref.value).find("/") + 1
+            end = str(child.ref.value).find("@")
             if end == -1: end = None
 
-            new_package = dependency.ref.value[start:end]
-
-            #if graph.get_importstatement(package, new_package)
-            graph.insert_package(dependency.ref.value[start:end])
+            child_package = graph.insert_package(child.ref.value[start:end])
+            if (parent_package is not None):
+                graph.insert_importstatement(child_package, parent_package)
     results = {}
 
     tools = os.listdir(path)
@@ -147,7 +159,7 @@ def import_ds1_sboms(path: str, package: str) -> dict[str, DependencyGraph]:
             deserialized_bom = Bom.from_json(data=json.loads(input_json.read())) # type: ignore
 
             graph = DependencyGraph()
-            extract_dependencies(deserialized_bom.dependencies, graph) # type: ignore
+            extract_dependencies(deserialized_bom.dependencies, None, graph) # type: ignore
             results[tool] = graph
 
     return results                 
