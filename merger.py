@@ -40,7 +40,7 @@ class PackageAnalysis:
     source_path: str
     graphs: dict[str, DependencyGraph]
     raw_packages_from_metadata: list[str]
-    ground_truth: dict[str, DependencyGraph] | None
+    ground_truth: DependencyGraph | None
 
 @dataclass
 class Dataset:
@@ -132,6 +132,24 @@ def import_ds2_sboms(path: str, package: str) -> dict[str, DependencyGraph]:
     return results
 
 def generate_ds2():
+    def extract_ground_truth_dependencies(
+        child_packages: list, 
+        parent_package: Package | None, 
+        graph: DependencyGraph
+    ):
+        for child in child_packages:
+            package_name = None
+            if "package" in child:
+                package_name = child["package"]["package_name"]
+            else:
+                package_name = child["package_name"]
+            child_package = graph.insert_package(package_name)
+            if "dependencies" in child and len(child["dependencies"]) > 0:
+                extract_ground_truth_dependencies(child["dependencies"], child_package, graph)
+
+            if (parent_package is not None):
+                graph.insert_importstatement(child_package, parent_package)
+
     sources_by_package = {
         "apprise": os.path.join(DS2_PATH, "packages", "apprise", "apprise", "apprise.py"),
         "django-rest-framework": os.path.join(DS2_PATH, "packages", "django-rest-framework", "rest_framework"),
@@ -147,6 +165,7 @@ def generate_ds2():
     dataset = Dataset()
 
     for package in packages: 
+        # requirements
         requirements_path = os.path.join(os.path.join(DS2_PATH, "packages", package, "requirements.txt"))
         if not os.path.exists(requirements_path):
             continue
@@ -159,12 +178,20 @@ def generate_ds2():
                     raw_requirements.append(req.line)
                 else:
                     raw_requirements.append(req.name)
-        
+        # ground truth
+        ground_truth_dict = {}
+        ground_truth_path = os.path.join(os.path.join(DS2_PATH, "deptree_gt", package + "-deptree.json"))
+        with open(ground_truth_path) as ground_truth_file:
+            ground_truth_dict = json.loads(ground_truth_file.read())
+        graph = DependencyGraph()
+        extract_ground_truth_dependencies(ground_truth_dict, None, graph)
+
+        # the rest
         dataset.package_analyses[package] = PackageAnalysis(
             source_path=sources_by_package[package],
             raw_packages_from_metadata=raw_requirements,
             graphs=import_ds2_sboms(os.path.join(DS2_PATH, "sbom", package), package),
-            ground_truth=None
+            ground_truth=graph
         )
         
 
