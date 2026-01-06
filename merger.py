@@ -1,10 +1,10 @@
-import sys
 import os
 import json
 import requirements
 from cyclonedx.model.bom import Bom
 from dataclasses import dataclass, asdict, field
 from sortedcontainers import SortedSet
+from typing import Any
 
 DS1_PATH = os.path.join(".", "ds1")
 DS2_PATH = os.path.join(".", "ds2")
@@ -12,6 +12,7 @@ DS2_PATH = os.path.join(".", "ds2")
 @dataclass(eq=True, frozen=True)
 class Package():
     name: str
+    node: Any | None = None
 
 @dataclass(eq=True, frozen=True)
 class ImportStatement():

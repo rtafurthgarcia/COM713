@@ -1,0 +1,257 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:6fad7e17-c3d2-4655-a5fe-0a3add29e5be",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2024-12-06T18:03:58+01:00",
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "author": "anchore",
+                    "name": "syft",
+                    "version": "1.0.1"
+                }
+            ]
+        },
+        "component": {
+            "bom-ref": "e2eaecd9758d424b",
+            "type": "file",
+            "name": "../projects/pdm-setuptools"
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "pkg:pypi/pdm-setuptools@0.1.0?package-id=b7ee5133ff22ab64",
+            "type": "library",
+            "author": "name <name@mail.com>",
+            "name": "pdm-setuptools",
+            "version": "0.1.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                }
+            ],
+            "cpe": "cpe:2.3:a:python-pdm-setuptools:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/pdm-setuptools@0.1.0",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "python-installed-package-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "python"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "python"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "python-package"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-pdm-setuptools:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_pdm_setuptools:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_pdm_setuptools:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<name_project:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<name_project:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<nameproject:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<nameproject:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm-setuptools:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm-setuptools:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm_setuptools:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm_setuptools:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-pdm-setuptools:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-pdm-setuptools:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_pdm_setuptools:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_pdm_setuptools:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<name_project:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<name_project:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name-\\<name:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name-\\<name:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<name:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<name:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<nameproject:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<nameproject:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-pdm:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-pdm:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_pdm:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_pdm:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm-setuptools:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm-setuptools:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm_setuptools:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm_setuptools:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name-\\<name:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name-\\<name:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<name:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:name_\\<name:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm:python-pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm:python_pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-pdm:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-pdm:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_pdm:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_pdm:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm:pdm-setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:pdm:pdm_setuptools:0.1.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/src/pdm_setuptools.egg-info/PKG-INFO"
+                },
+                {
+                    "name": "syft:location:1:path",
+                    "value": "/src/pdm_setuptools.egg-info/top_level.txt"
+                }
+            ]
+        }
+    ]
+}

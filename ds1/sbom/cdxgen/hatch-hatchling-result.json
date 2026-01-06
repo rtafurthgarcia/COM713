@@ -1,0 +1,1022 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:d22478c0-896b-40f5-9a21-e4d80cbbd9d1",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-12-06T17:01:47.590Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "10.2.2",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@10.2.2",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.2.2",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "name": "hatch-hatchling",
+      "description": "",
+      "author": "",
+      "type": "application",
+      "bom-ref": "pkg:pypi/hatch-hatchling@latest",
+      "purl": "pkg:pypi/hatch-hatchling@latest"
+    }
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "hatch-hatchling",
+      "version": "0.0.1",
+      "scope": "optional",
+      "purl": "pkg:pypi/hatch-hatchling@0.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/hatch-hatchling@0.0.1"
+    },
+    {
+      "author": "Travis E. Oliphant et al.",
+      "group": "",
+      "name": "numpy",
+      "version": "2.1.3",
+      "description": "Fundamental package for array computing in Python",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c894b4305373b9c5576d7a12b473702afdf48ce5369c074ba304cc5ad8730dff"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD",
+            "url": "https://opensource.org/licenses/0BSD"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/numpy@2.1.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/numpy@2.1.3",
+      "evidence": {
+        "identity": {
+          "field": "version",
+          "confidence": 0.5,
+          "methods": [
+            {
+              "technique": "source-code-analysis",
+              "confidence": 0.5,
+              "value": "PyPI package: numpy"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "cdx:pypi:versionSpecifiers",
+          "value": ""
+        },
+        {
+          "name": "ImportedModules",
+          "value": "numpy"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "typing-extensions",
+      "version": "4.12.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/typing-extensions@4.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.12.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qx8y75"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "seaborn",
+      "version": "0.12.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/seaborn@0.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/seaborn@0.12.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qx8y75"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "numpy",
+      "version": "2.0.2",
+      "scope": "required",
+      "purl": "pkg:pypi/numpy@2.0.2",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/numpy@2.0.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "matplotlib",
+      "version": "3.9.3",
+      "scope": "optional",
+      "purl": "pkg:pypi/matplotlib@3.9.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/matplotlib@3.9.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "scope": "optional",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "six",
+      "version": "1.17.0",
+      "scope": "optional",
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "importlib-resources",
+      "version": "6.4.5",
+      "scope": "optional",
+      "purl": "pkg:pypi/importlib-resources@6.4.5",
+      "type": "library",
+      "bom-ref": "pkg:pypi/importlib-resources@6.4.5",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "zipp",
+      "version": "3.21.0",
+      "scope": "optional",
+      "purl": "pkg:pypi/zipp@3.21.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/zipp@3.21.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pillow",
+      "version": "11.0.0",
+      "scope": "optional",
+      "purl": "pkg:pypi/pillow@11.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pillow@11.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "fonttools",
+      "version": "4.55.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/fonttools@4.55.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/fonttools@4.55.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "packaging",
+      "version": "24.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/packaging@24.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@24.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "cycler",
+      "version": "0.12.1",
+      "scope": "optional",
+      "purl": "pkg:pypi/cycler@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cycler@0.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "contourpy",
+      "version": "1.3.0",
+      "scope": "optional",
+      "purl": "pkg:pypi/contourpy@1.3.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/contourpy@1.3.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "kiwisolver",
+      "version": "1.4.7",
+      "scope": "optional",
+      "purl": "pkg:pypi/kiwisolver@1.4.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/kiwisolver@1.4.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pyparsing",
+      "version": "3.2.0",
+      "scope": "optional",
+      "purl": "pkg:pypi/pyparsing@3.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyparsing@3.2.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pandas",
+      "version": "2.2.3",
+      "scope": "optional",
+      "purl": "pkg:pypi/pandas@2.2.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/pandas@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pytz",
+      "version": "2024.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/pytz@2024.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytz@2024.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "tzdata",
+      "version": "2024.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/tzdata@2024.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tzdata@2024.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "hatch-hatchling",
+      "version": "latest",
+      "scope": "optional",
+      "purl": "pkg:pypi/hatch-hatchling@latest",
+      "type": "library",
+      "bom-ref": "pkg:pypi/hatch-hatchling@latest",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qx8y75"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "urllib3",
+      "version": "2.2.3",
+      "scope": "optional",
+      "purl": "pkg:pypi/urllib3@2.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "docopt",
+      "version": "0.6.2",
+      "scope": "optional",
+      "purl": "pkg:pypi/docopt@0.6.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/docopt@0.6.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "black",
+      "version": "latest",
+      "scope": "optional",
+      "purl": "pkg:pypi/black@latest",
+      "type": "library",
+      "bom-ref": "pkg:pypi/black@latest",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qx8y75"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "regex",
+      "version": "2024.11.6",
+      "scope": "optional",
+      "purl": "pkg:pypi/regex@2024.11.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/regex@2024.11.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "tomli",
+      "version": "1.2.3",
+      "scope": "optional",
+      "purl": "pkg:pypi/tomli@1.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tomli@1.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pathspec",
+      "version": "0.12.1",
+      "scope": "optional",
+      "purl": "pkg:pypi/pathspec@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pathspec@0.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "platformdirs",
+      "version": "4.3.6",
+      "scope": "optional",
+      "purl": "pkg:pypi/platformdirs@4.3.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/platformdirs@4.3.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "mypy-extensions",
+      "version": "1.0.0",
+      "scope": "optional",
+      "purl": "pkg:pypi/mypy-extensions@1.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mypy-extensions@1.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "click",
+      "version": "8.1.7",
+      "scope": "optional",
+      "purl": "pkg:pypi/click@8.1.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.1.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/hatch-hatchling/pyproject.toml"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/hatch-hatchling/pyproject.toml"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/numpy@2.1.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.12.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/numpy@2.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/matplotlib@3.9.3",
+      "dependsOn": [
+        "pkg:pypi/contourpy@1.3.0",
+        "pkg:pypi/cycler@0.12.1",
+        "pkg:pypi/fonttools@4.55.2",
+        "pkg:pypi/importlib-resources@6.4.5",
+        "pkg:pypi/kiwisolver@1.4.7",
+        "pkg:pypi/numpy@2.0.2",
+        "pkg:pypi/packaging@24.2",
+        "pkg:pypi/pillow@11.0.0",
+        "pkg:pypi/pyparsing@3.2.0",
+        "pkg:pypi/python-dateutil@2.9.0.post0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "dependsOn": [
+        "pkg:pypi/six@1.17.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/importlib-resources@6.4.5",
+      "dependsOn": [
+        "pkg:pypi/zipp@3.21.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/zipp@3.21.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pillow@11.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/fonttools@4.55.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/packaging@24.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cycler@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/contourpy@1.3.0",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/kiwisolver@1.4.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyparsing@3.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pandas@2.2.3",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.0.2",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/pytz@2024.2",
+        "pkg:pypi/tzdata@2024.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pytz@2024.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tzdata@2024.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/seaborn@0.12.2",
+      "dependsOn": [
+        "pkg:pypi/matplotlib@3.9.3",
+        "pkg:pypi/numpy@2.0.2",
+        "pkg:pypi/pandas@2.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/urllib3@2.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/docopt@0.6.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/hatch-hatchling@latest",
+      "dependsOn": [
+        "pkg:pypi/docopt@0.6.2",
+        "pkg:pypi/matplotlib@3.9.3",
+        "pkg:pypi/urllib3@2.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/regex@2024.11.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tomli@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pathspec@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/platformdirs@4.3.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/mypy-extensions@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/click@8.1.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/black@latest",
+      "dependsOn": [
+        "pkg:pypi/click@8.1.7",
+        "pkg:pypi/mypy-extensions@1.0.0",
+        "pkg:pypi/pathspec@0.12.1",
+        "pkg:pypi/platformdirs@4.3.6",
+        "pkg:pypi/regex@2024.11.6",
+        "pkg:pypi/tomli@1.2.3",
+        "pkg:pypi/typing-extensions@4.12.2"
+      ]
+    }
+  ]
+}

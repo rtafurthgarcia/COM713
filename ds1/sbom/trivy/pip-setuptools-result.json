@@ -1,0 +1,80 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:fa5beddf-69ee-4d36-bcb9-957f76d1b418",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-12-06T17:07:32+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.49.1"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "6e18303a-6b31-448d-a164-b1d11605a85a",
+      "type": "application",
+      "name": "../projects/pip-setuptools",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "4590a760-d591-45d7-92b2-8d69bbdaeed1",
+      "type": "application",
+      "name": "requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/seaborn@0.12.2",
+      "type": "library",
+      "name": "seaborn",
+      "version": "0.12.2",
+      "purl": "pkg:pypi/seaborn@0.12.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "4590a760-d591-45d7-92b2-8d69bbdaeed1",
+      "dependsOn": [
+        "pkg:pypi/seaborn@0.12.2"
+      ]
+    },
+    {
+      "ref": "6e18303a-6b31-448d-a164-b1d11605a85a",
+      "dependsOn": [
+        "4590a760-d591-45d7-92b2-8d69bbdaeed1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/seaborn@0.12.2",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:0c123cd2-eb6a-4e2b-8e63-2266c3049feb",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2024-12-06T18:03:40+01:00",
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "author": "anchore",
+                    "name": "syft",
+                    "version": "1.0.1"
+                }
+            ]
+        },
+        "component": {
+            "bom-ref": "dd80360e4654478e",
+            "type": "file",
+            "name": "../projects/pdm-flit"
+        }
+    }
+}

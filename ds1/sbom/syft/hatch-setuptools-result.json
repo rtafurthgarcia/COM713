@@ -1,0 +1,257 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:6ddc04b5-b6d9-4a9e-baa9-33c1f3ae99ec",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2024-12-06T18:03:34+01:00",
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "author": "anchore",
+                    "name": "syft",
+                    "version": "1.0.1"
+                }
+            ]
+        },
+        "component": {
+            "bom-ref": "1e3a9034c7a6da4a",
+            "type": "file",
+            "name": "../projects/hatch-setuptools"
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "pkg:pypi/hatch-setuptools@0.0.0?package-id=d78f562c2ca28e17",
+            "type": "library",
+            "author": "\"U.N. Owen\" <void@some.where>",
+            "name": "hatch-setuptools",
+            "version": "0.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                }
+            ],
+            "cpe": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<void_project:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/hatch-setuptools@0.0.0",
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "python-installed-package-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "python"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "python"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "python-package"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<void_project:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<voidproject:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<voidproject:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-hatch-setuptools:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-hatch-setuptools:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_hatch_setuptools:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_hatch_setuptools:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<void_project:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<void_project:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u-n--owen\\\"-\\<void:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u-n--owen\\\"-\\<void:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<void:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<void:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<voidproject:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<voidproject:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch-setuptools:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch-setuptools:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch_setuptools:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch_setuptools:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-hatch-setuptools:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-hatch-setuptools:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_hatch_setuptools:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_hatch_setuptools:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-hatch:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-hatch:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_hatch:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_hatch:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u-n--owen\\\"-\\<void:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u-n--owen\\\"-\\<void:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<void:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:\\\"u_n__owen\\\"_\\<void:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch-setuptools:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch-setuptools:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch_setuptools:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch_setuptools:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch:python-hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch:python_hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-hatch:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python-hatch:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_hatch:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python_hatch:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:python:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch:hatch-setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:cpe23",
+                    "value": "cpe:2.3:a:hatch:hatch_setuptools:0.0.0:*:*:*:*:*:*:*"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/src/hatch_setuptools.egg-info/PKG-INFO"
+                },
+                {
+                    "name": "syft:location:1:path",
+                    "value": "/src/hatch_setuptools.egg-info/top_level.txt"
+                }
+            ]
+        }
+    ]
+}

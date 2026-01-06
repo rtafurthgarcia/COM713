@@ -1,0 +1,1154 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:1c2f1f2a-f816-4f3c-9957-add585a56ad0",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-12-06T17:07:30.589Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "10.2.2",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@10.2.2",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.2.2",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "name": "pip-setuptools",
+      "version": "0.0.1",
+      "author": "",
+      "description": "A small example package",
+      "type": "application",
+      "bom-ref": "pkg:pypi/pip-setuptools@0.0.1",
+      "purl": "pkg:pypi/pip-setuptools@0.0.1"
+    }
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "pip-setuptools",
+      "version": "0.0.1",
+      "description": "A small example package",
+      "purl": "pkg:pypi/pip-setuptools@0.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pip-setuptools@0.0.1"
+    },
+    {
+      "group": "",
+      "name": "urllib3",
+      "version": "2.2.3",
+      "purl": "pkg:pypi/urllib3@2.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qtojsz"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "typing-extensions",
+      "version": "4.12.2",
+      "purl": "pkg:pypi/typing-extensions@4.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.12.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qtojsz"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "seaborn",
+      "version": "0.12.2",
+      "purl": "pkg:pypi/seaborn@0.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/seaborn@0.12.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qtojsz"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "matplotlib",
+      "version": "3.9.3",
+      "purl": "pkg:pypi/matplotlib@3.9.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/matplotlib@3.9.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "packaging",
+      "version": "24.2",
+      "purl": "pkg:pypi/packaging@24.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@24.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "contourpy",
+      "version": "1.3.0",
+      "purl": "pkg:pypi/contourpy@1.3.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/contourpy@1.3.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "numpy",
+      "version": "2.0.2",
+      "purl": "pkg:pypi/numpy@2.0.2",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/numpy@2.0.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        },
+        {
+          "name": "ImportedModules",
+          "value": "numpy"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "kiwisolver",
+      "version": "1.4.7",
+      "purl": "pkg:pypi/kiwisolver@1.4.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/kiwisolver@1.4.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "cycler",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/cycler@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cycler@0.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pillow",
+      "version": "11.0.0",
+      "purl": "pkg:pypi/pillow@11.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pillow@11.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pyparsing",
+      "version": "3.2.0",
+      "purl": "pkg:pypi/pyparsing@3.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyparsing@3.2.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "fonttools",
+      "version": "4.55.2",
+      "purl": "pkg:pypi/fonttools@4.55.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/fonttools@4.55.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "importlib-resources",
+      "version": "6.4.5",
+      "purl": "pkg:pypi/importlib-resources@6.4.5",
+      "type": "library",
+      "bom-ref": "pkg:pypi/importlib-resources@6.4.5",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "zipp",
+      "version": "3.21.0",
+      "purl": "pkg:pypi/zipp@3.21.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/zipp@3.21.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pandas",
+      "version": "2.2.3",
+      "purl": "pkg:pypi/pandas@2.2.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/pandas@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pytz",
+      "version": "2024.2",
+      "purl": "pkg:pypi/pytz@2024.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytz@2024.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "tzdata",
+      "version": "2024.2",
+      "purl": "pkg:pypi/tzdata@2024.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tzdata@2024.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "docopt",
+      "version": "0.6.2",
+      "purl": "pkg:pypi/docopt@0.6.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/docopt@0.6.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qtojsz"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "black",
+      "version": "latest",
+      "purl": "pkg:pypi/black@latest",
+      "type": "library",
+      "bom-ref": "pkg:pypi/black@latest",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qtojsz"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pathspec",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/pathspec@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pathspec@0.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "mypy-extensions",
+      "version": "1.0.0",
+      "purl": "pkg:pypi/mypy-extensions@1.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mypy-extensions@1.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "tomli",
+      "version": "1.2.3",
+      "purl": "pkg:pypi/tomli@1.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tomli@1.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "click",
+      "version": "8.1.7",
+      "purl": "pkg:pypi/click@8.1.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.1.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "regex",
+      "version": "2024.11.6",
+      "purl": "pkg:pypi/regex@2024.11.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/regex@2024.11.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "platformdirs",
+      "version": "4.3.6",
+      "purl": "pkg:pypi/platformdirs@4.3.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/platformdirs@4.3.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "nltk",
+      "version": "3.9.1",
+      "purl": "pkg:pypi/nltk@3.9.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/nltk@3.9.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qtojsz"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "joblib",
+      "version": "1.4.2",
+      "purl": "pkg:pypi/joblib@1.4.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/joblib@1.4.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/opt-requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/opt-requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "tqdm",
+      "version": "4.67.1",
+      "purl": "pkg:pypi/tqdm@4.67.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tqdm@4.67.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/opt-requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/opt-requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pytest",
+      "version": "8.3.4",
+      "purl": "pkg:pypi/pytest@8.3.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest@8.3.4",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qtojsz"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pluggy",
+      "version": "1.5.0",
+      "purl": "pkg:pypi/pluggy@1.5.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pluggy@1.5.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/dev-requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/dev-requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "iniconfig",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/iniconfig@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/iniconfig@2.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/dev-requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/dev-requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "exceptiongroup",
+      "version": "1.2.2",
+      "purl": "pkg:pypi/exceptiongroup@1.2.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/exceptiongroup@1.2.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/app/projects/pip-setuptools/dev-requirements.txt"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/app/projects/pip-setuptools/dev-requirements.txt"
+        }
+      ]
+    },
+    {
+      "group": "",
+      "name": "pip-setuptools",
+      "version": "latest",
+      "purl": "pkg:pypi/pip-setuptools@latest",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pip-setuptools@latest",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "instrumentation",
+              "confidence": 1,
+              "value": "/tmp/cdxgen-venv-Qtojsz"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/pip-setuptools@0.0.1",
+      "dependsOn": [
+        "pkg:pypi/urllib3@2.2.3",
+        "pkg:pypi/typing-extensions@4.12.2",
+        "pkg:pypi/seaborn@0.12.2",
+        "pkg:pypi/pytest@8.3.4",
+        "pkg:pypi/nltk@3.9.1",
+        "pkg:pypi/importlib-resources@6.4.5",
+        "pkg:pypi/docopt@0.6.2",
+        "pkg:pypi/black@latest"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/urllib3@2.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.12.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/matplotlib@3.9.3",
+      "dependsOn": [
+        "pkg:pypi/contourpy@1.3.0",
+        "pkg:pypi/cycler@0.12.1",
+        "pkg:pypi/fonttools@4.55.2",
+        "pkg:pypi/importlib-resources@6.4.5",
+        "pkg:pypi/kiwisolver@1.4.7",
+        "pkg:pypi/numpy@2.0.2",
+        "pkg:pypi/packaging@24.2",
+        "pkg:pypi/pillow@11.0.0",
+        "pkg:pypi/pyparsing@3.2.0",
+        "pkg:pypi/python-dateutil@2.9.0.post0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/packaging@24.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/contourpy@1.3.0",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/numpy@2.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/kiwisolver@1.4.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cycler@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pillow@11.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyparsing@3.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/fonttools@4.55.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "dependsOn": [
+        "pkg:pypi/six@1.17.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/importlib-resources@6.4.5",
+      "dependsOn": [
+        "pkg:pypi/zipp@3.21.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/zipp@3.21.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pandas@2.2.3",
+      "dependsOn": [
+        "pkg:pypi/numpy@2.0.2",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/pytz@2024.2",
+        "pkg:pypi/tzdata@2024.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pytz@2024.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tzdata@2024.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/seaborn@0.12.2",
+      "dependsOn": [
+        "pkg:pypi/matplotlib@3.9.3",
+        "pkg:pypi/numpy@2.0.2",
+        "pkg:pypi/pandas@2.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/docopt@0.6.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pathspec@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/mypy-extensions@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tomli@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/click@8.1.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/regex@2024.11.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/platformdirs@4.3.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/black@latest",
+      "dependsOn": [
+        "pkg:pypi/click@8.1.7",
+        "pkg:pypi/mypy-extensions@1.0.0",
+        "pkg:pypi/pathspec@0.12.1",
+        "pkg:pypi/platformdirs@4.3.6",
+        "pkg:pypi/regex@2024.11.6",
+        "pkg:pypi/tomli@1.2.3",
+        "pkg:pypi/typing-extensions@4.12.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/joblib@1.4.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tqdm@4.67.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/nltk@3.9.1",
+      "dependsOn": [
+        "pkg:pypi/click@8.1.7",
+        "pkg:pypi/joblib@1.4.2",
+        "pkg:pypi/regex@2024.11.6",
+        "pkg:pypi/tqdm@4.67.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pluggy@1.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/iniconfig@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/exceptiongroup@1.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pytest@8.3.4",
+      "dependsOn": [
+        "pkg:pypi/exceptiongroup@1.2.2",
+        "pkg:pypi/iniconfig@2.0.0",
+        "pkg:pypi/packaging@24.2",
+        "pkg:pypi/pluggy@1.5.0",
+        "pkg:pypi/tomli@1.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pip-setuptools@latest",
+      "dependsOn": []
+    }
+  ]
+}

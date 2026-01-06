@@ -1,0 +1,909 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:aa40c6a1-8851-46d7-95bd-c84207eaa8ad",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-12-06T17:03:56.622Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "10.2.2",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@10.2.2",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.2.2",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "name": "pdm-setuptools",
+      "version": "0.1.0",
+      "description": "Default template for PDM package",
+      "author": "",
+      "type": "application",
+      "bom-ref": "pkg:pypi/pdm-setuptools@0.1.0",
+      "purl": "pkg:pypi/pdm-setuptools@0.1.0"
+    }
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "black",
+      "version": "21.10b0",
+      "purl": "pkg:pypi/black@21.10b0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/black@21.10b0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "click",
+      "version": "8.1.7",
+      "purl": "pkg:pypi/click@8.1.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.1.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "colorama",
+      "version": "0.4.6",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/colorama@0.4.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "contourpy",
+      "version": "1.3.1",
+      "purl": "pkg:pypi/contourpy@1.3.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/contourpy@1.3.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "cycler",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/cycler@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cycler@0.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "docopt",
+      "version": "0.6.2",
+      "purl": "pkg:pypi/docopt@0.6.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/docopt@0.6.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "exceptiongroup",
+      "version": "1.2.2",
+      "purl": "pkg:pypi/exceptiongroup@1.2.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/exceptiongroup@1.2.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "fonttools",
+      "version": "4.55.2",
+      "purl": "pkg:pypi/fonttools@4.55.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/fonttools@4.55.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "iniconfig",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/iniconfig@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/iniconfig@2.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "joblib",
+      "version": "1.4.2",
+      "purl": "pkg:pypi/joblib@1.4.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/joblib@1.4.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "kiwisolver",
+      "version": "1.4.7",
+      "purl": "pkg:pypi/kiwisolver@1.4.7",
+      "type": "library",
+      "bom-ref": "pkg:pypi/kiwisolver@1.4.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "matplotlib",
+      "version": "3.9.3",
+      "purl": "pkg:pypi/matplotlib@3.9.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/matplotlib@3.9.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "mypy-extensions",
+      "version": "1.0.0",
+      "purl": "pkg:pypi/mypy-extensions@1.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/mypy-extensions@1.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "nltk",
+      "version": "3.9.1",
+      "purl": "pkg:pypi/nltk@3.9.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/nltk@3.9.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "numpy",
+      "version": "2.1.3",
+      "purl": "pkg:pypi/numpy@2.1.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/numpy@2.1.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "packaging",
+      "version": "24.2",
+      "purl": "pkg:pypi/packaging@24.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@24.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pandas",
+      "version": "2.2.3",
+      "purl": "pkg:pypi/pandas@2.2.3",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/pandas@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pathspec",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/pathspec@0.12.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pathspec@0.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pillow",
+      "version": "11.0.0",
+      "purl": "pkg:pypi/pillow@11.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pillow@11.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "platformdirs",
+      "version": "4.3.6",
+      "purl": "pkg:pypi/platformdirs@4.3.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/platformdirs@4.3.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pluggy",
+      "version": "1.5.0",
+      "purl": "pkg:pypi/pluggy@1.5.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pluggy@1.5.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pyparsing",
+      "version": "3.2.0",
+      "purl": "pkg:pypi/pyparsing@3.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyparsing@3.2.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pytest",
+      "version": "8.3.4",
+      "purl": "pkg:pypi/pytest@8.3.4",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytest@8.3.4",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "pytz",
+      "version": "2024.2",
+      "purl": "pkg:pypi/pytz@2024.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytz@2024.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "regex",
+      "version": "2024.11.6",
+      "purl": "pkg:pypi/regex@2024.11.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/regex@2024.11.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "seaborn",
+      "version": "0.12.2",
+      "purl": "pkg:pypi/seaborn@0.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/seaborn@0.12.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "tomli",
+      "version": "1.2.3",
+      "purl": "pkg:pypi/tomli@1.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tomli@1.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "tqdm",
+      "version": "4.67.1",
+      "purl": "pkg:pypi/tqdm@4.67.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tqdm@4.67.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "typing-extensions",
+      "version": "4.12.2",
+      "purl": "pkg:pypi/typing-extensions@4.12.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.12.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "tzdata",
+      "version": "2024.2",
+      "purl": "pkg:pypi/tzdata@2024.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tzdata@2024.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "",
+      "name": "urllib3",
+      "version": "2.2.3",
+      "purl": "pkg:pypi/urllib3@2.2.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 1,
+              "value": "/app/projects/pdm-setuptools/pdm.lock"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/pdm-setuptools@0.1.0",
+      "dependsOn": [
+        "pkg:pypi/black@21.10b0",
+        "pkg:pypi/click@8.1.7",
+        "pkg:pypi/colorama@0.4.6",
+        "pkg:pypi/contourpy@1.3.1",
+        "pkg:pypi/cycler@0.12.1",
+        "pkg:pypi/docopt@0.6.2",
+        "pkg:pypi/exceptiongroup@1.2.2",
+        "pkg:pypi/fonttools@4.55.2",
+        "pkg:pypi/iniconfig@2.0.0",
+        "pkg:pypi/joblib@1.4.2",
+        "pkg:pypi/kiwisolver@1.4.7",
+        "pkg:pypi/matplotlib@3.9.3",
+        "pkg:pypi/mypy-extensions@1.0.0",
+        "pkg:pypi/nltk@3.9.1",
+        "pkg:pypi/numpy@2.1.3",
+        "pkg:pypi/packaging@24.2",
+        "pkg:pypi/pandas@2.2.3",
+        "pkg:pypi/pathspec@0.12.1",
+        "pkg:pypi/pillow@11.0.0",
+        "pkg:pypi/platformdirs@4.3.6",
+        "pkg:pypi/pluggy@1.5.0",
+        "pkg:pypi/pyparsing@3.2.0",
+        "pkg:pypi/pytest@8.3.4",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/pytz@2024.2",
+        "pkg:pypi/regex@2024.11.6",
+        "pkg:pypi/seaborn@0.12.2",
+        "pkg:pypi/six@1.17.0",
+        "pkg:pypi/tomli@1.2.3",
+        "pkg:pypi/tqdm@4.67.1",
+        "pkg:pypi/typing-extensions@4.12.2",
+        "pkg:pypi/tzdata@2024.2",
+        "pkg:pypi/urllib3@2.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/black@21.10b0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/click@8.1.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/colorama@0.4.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/contourpy@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cycler@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/docopt@0.6.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/exceptiongroup@1.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/fonttools@4.55.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/iniconfig@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/joblib@1.4.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/kiwisolver@1.4.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/matplotlib@3.9.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/mypy-extensions@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/nltk@3.9.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/numpy@2.1.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/packaging@24.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pandas@2.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pathspec@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pillow@11.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/platformdirs@4.3.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pluggy@1.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyparsing@3.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pytest@8.3.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pytz@2024.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/regex@2024.11.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/seaborn@0.12.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tomli@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tqdm@4.67.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.12.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tzdata@2024.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/urllib3@2.2.3",
+      "dependsOn": []
+    }
+  ]
+}
