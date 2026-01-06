@@ -193,7 +193,7 @@ def generate_ds2():
             source_path=sources_by_package[package],
             raw_packages_from_metadata=raw_requirements,
             graphs=import_ds2_sboms(os.path.join(DS2_PATH, "sbom", package), package),
-            packages_path=os.path.join(DS2_PATH, "packages", package, "env", "lib", "site-packages"),
+            packages_path=os.path.join(DS2_PATH, "packages", package, "env", "lib", "python3.10", "site-packages"),
             ground_truth=graph
         )
         
