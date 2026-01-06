@@ -12,7 +12,6 @@ DS2_PATH = os.path.join(".", "ds2")
 @dataclass(eq=True, frozen=True)
 class Package():
     name: str
-    node: Any | None = None
 
 @dataclass(eq=True, frozen=True)
 class ImportStatement():
@@ -41,6 +40,7 @@ class PackageAnalysis:
     source_path: str
     graphs: dict[str, DependencyGraph]
     raw_packages_from_metadata: list[str]
+    packages_path: str
     ground_truth: DependencyGraph | None
 
 @dataclass
@@ -69,6 +69,7 @@ def generate_ds1():
             source_path=os.path.join(DS1_PATH, "packages", package, "src", package, "main.py"),
             raw_packages_from_metadata=raw_requirements,
             graphs=import_ds1_sboms(os.path.join(DS1_PATH, "sbom"), package),
+            packages_path=os.path.join(DS1_PATH, "packages", package, "env", "Lib", "site-packages"),
             ground_truth=None
         )
         
@@ -167,7 +168,7 @@ def generate_ds2():
 
     for package in packages: 
         # requirements
-        requirements_path = os.path.join(os.path.join(DS2_PATH, "packages", package, "requirements.txt"))
+        requirements_path = os.path.join(DS2_PATH, "packages", package, "requirements.txt")
         if not os.path.exists(requirements_path):
             continue
         
@@ -181,7 +182,7 @@ def generate_ds2():
                     raw_requirements.append(req.name)
         # ground truth
         ground_truth_dict = {}
-        ground_truth_path = os.path.join(os.path.join(DS2_PATH, "deptree_gt", package + "-deptree.json"))
+        ground_truth_path = os.path.join(DS2_PATH, "deptree_gt", package + "-deptree.json")
         with open(ground_truth_path) as ground_truth_file:
             ground_truth_dict = json.loads(ground_truth_file.read())
         graph = DependencyGraph()
@@ -192,6 +193,7 @@ def generate_ds2():
             source_path=sources_by_package[package],
             raw_packages_from_metadata=raw_requirements,
             graphs=import_ds2_sboms(os.path.join(DS2_PATH, "sbom", package), package),
+            packages_path=os.path.join(DS2_PATH, "packages", package, "env", "lib", "site-packages"),
             ground_truth=graph
         )
         
